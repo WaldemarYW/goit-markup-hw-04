@@ -188,10 +188,10 @@ a {
 }
 /* ----------------------------BODY */
 /* -----------hero */
-.hero-flex {
+/* .hero-flex {
   display: flex;
   align-items: center;
-}
+} */
 .hi-title {
   font-weight: 700;
   font-size: 56px;
@@ -205,9 +205,22 @@ a {
   width: 496px;
 }
 .hero-section {
-  background: var(--navy-blue);
+  max-width: 1440px;
+  background-color: var(--navy-blue);
+  margin-left: auto;
+  margin-right: auto;
   padding-top: 188px;
   padding-bottom: 188px;
+
+  background-image: linear-gradient(
+      to right,
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/people-office\ 1-min.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 .btn {
   padding-top: 16px;
@@ -227,9 +240,19 @@ a {
   display: block;
   margin: auto;
 }
-/* -------------about */
+/* ------------------------about */
 .about-section {
   padding-top: 120px;
+}
+.about-block-item {
+  padding: 24px 100px;
+  margin-bottom: 8px;
+  background-color: var(--cloud);
+}
+.about-icon {
+  width: 64px;
+  height: 64px;
+  justify-content: center;
 }
 
 .about-title {
@@ -270,7 +293,28 @@ a {
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   border-radius: 0px 0px 4px 4px;
 }
+.team-social-block {
+  padding-top: 20px;
+  padding-left: 16px;
+  padding-right: 16px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
 
+.team-social-link {
+  background-color: var(--iris);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+.team-social-link:hover {
+  background-color: var(--ocean);
+  cursor: pointer;
+}
+.tean-social-icon {
+  margin: 12px;
+}
 /* -------------------------------FOOTER */
 
 .footer-section {
